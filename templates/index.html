@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Task to Notion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="time"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Task to Notion</h1>
+    <form method="POST" action="/">
+        <label for="task">Task:</label><br>
+        <input type="text" id="task" name="task" required><br><br>
+        <label for="due_date">Due Date:</label><br>
+        <input type="date" id="due_date" name="due_date" required><br><br>
+        <label for="due_time">Due Time:</label><br>
+        <input type="time" id="due_time" name="due_time"><br><br>
+        <input type="submit" value="Add Task">
+    </form>
+</body>
+</html>
