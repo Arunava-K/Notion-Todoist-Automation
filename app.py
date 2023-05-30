@@ -8,10 +8,10 @@ app = Flask(__name__)
 todoist_api_token = "YOUR_TODOIST_API_TOKEN"
 
 # Your Notion API token
-notion_api_token = "YOUR_NOTION_API_TOKEN"
+notion_api_token = "secret_l3R5ILPoUZqSu84YbT7eoEYJ39Ff6yWw8sTt33WSUjZ"
 
 # Notion database ID
-database_id = "YOUR_DATABASE_ID"
+database_id = "c899e06bd5714edca4229801c7182fa2"
 
 # Notion API endpoint for creating a new page in the database
 notion_create_page_url = f"https://api.notion.com/v1/pages"
